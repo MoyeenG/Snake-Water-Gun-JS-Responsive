@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords"
+        content="HTML, CSS, Javascript, Snake, Water, Gun, Rock, Paper, Scissors, Player vs Computer, Single Player">
+    <meta name="description" content="A Single player game also known by the name rock/paper/scissors">
+    <meta name="author" content="Moyeen F. Godyari">
+    <title>Snake-Water-Gun</title>
+    <link rel="stylesheet" href="styles/style_landing_page.css">
+    <link rel="stylesheet" href="styles/style_quit_game_modal.css">
+    <link rel="stylesheet" href="styles/style_variables.css">
+    <link rel="stylesheet" href="styles/style_gameplay_and_results_modal.css">
+    <script src="scripts/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="grid_container">
+        <div id="left_flexbox">
+            <h1>Snake - Water - Gun</h1>
+            <img src="images/swg_image.jpg" alt="game_logo">
+            <p>
+                The game is just like rock/paper/scissors.
+                In real life both the players carry out the gestures simaltaneously.
+                The snake drinks the water, the water damages the gun and the gun kills the snake.
+            </p>
+        </div>
+
+        <div id="right_flexbox">
+            <h1>Rules</h1>
+
+            <ul id="rules_list">
+                <li>Snake defeats Water</li>
+                <li>Water defeats Gun</li>
+                <li>Gun defeats Snake</li>
+                <li>
+                    Enter:
+                    <ul id="nested_rules_list">
+                        <li>"S" for "Snake"</li>
+                        <li>"W" for "Water"</li>
+                        <li>"G" for "Gun"</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>Do you want to start the game?</p>
+
+            <div id="button_cotainer_landing_page">
+                <button id="start_game">Yes</button>
+                <button id="quit_game">Exit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ************** Quit game Modal / Quit game before start ************* -->
+
+    <div id="quit_game_modal">
+        <div id="quit_game_elements_container">
+            <span id="close_modal_icon_quit_game">&times;</span>
+            <p>Do you want to quit the game?</p>
+
+            <div id="modal_button_container">
+                <button type="button" id="modal_quit_button" class="quit_modal_button">Yes</button>
+                <button type="button" id="modal_cancelQuit_button" class="quit_modal_button">No</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ************ Gameplay Modal / Results Modal************ -->
+
+    <div id="gameplay_results_modal">
+
+        <div id="gameplay_elements_container">
+            <span id="close_modal_icon_gameplay">&times;</span>
+
+            <div id="input_elem_container">
+                <label for="input_Box">Enter <span>S</span> or <span>W</span> or <span>G</span> :</label>
+                <input id="input_Box" type="text" autocomplete="off" autofocus required />
+                <button type="button" id="player_Input_Button">OK</button>
+            </div>
+
+            <p id="current_Winner"></p>
+
+            <div id="game_stats_container">
+                <ul>
+                    <li>
+                        <p class="current_Guess" id="player_current_guess">Your guess: <span></span></p>
+                    </li>
+
+                    <li>
+                        <p class="result" id="player_current_score">Your Score: <span class="score">0</span></p>
+                    </li>
+
+                    <li>
+                        <p class="current_Guess" id="computer_current_guess">Computer's guess: <span></span></p>
+                    </li>
+
+                    <li>
+                        <p class="result" id="computer_current_score">Computer's Score: <span class="score">0</span></p>
+                    </li>
+
+                    <li>
+                        <p id="attempts_Remaining">Attempts Remaining: <span>10 </span>out of <span>10</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="gameplay_quit_button_container">
+                <button id="gameplay_quit_button">Quit Game</button>
+
+                <button id="game_over_exit_button">Exit Game</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

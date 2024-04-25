@@ -1,0 +1,25 @@
+:root {
+  --background_color_left: rgb(59, 63, 139);
+
+  --background_color_right: rgb(55, 148, 32);
+
+  --bottom_text_color: burlywood;
+
+  --text_color: rgb(168, 53, 0);
+
+  --gradient_background_modal: linear-gradient(
+    rgb(188, 211, 255),
+    rgb(255, 220, 168) 45%,
+    rgb(214, 255, 255)
+  );
+
+  --modal_background_color: rgb(104, 115, 86);
+
+  --leaveGameModal-backgroundColor: rgba(32, 0, 90);
+
+  --leaveGameBox-backgroundColor: rgb(31, 0, 90);
+
+  --leaveGame-textColor: burlywood;
+
+  --buttonColor: rgb(59, 63, 139);
+}
